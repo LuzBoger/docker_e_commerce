@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  frontend:
+    ports:
+      - "8080:8080"
+
+  auth-service:
+    ports:
+      - "3001:3001"
+
+  order-service:
+    ports:
+      - "3002:3002"
+
+  product-service:
+    ports:
+      - "3000:3000"
+
+  mongo:
+    ports:
+      - "27017:27017"
